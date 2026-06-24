@@ -92,4 +92,28 @@ const resetGame = () => {
     newGameBtn.addEventListener("click",resetGame);
     resetBtn.addEventListener("click",resetGame);
 
+    boxes.forEach((box) => {
+    box.addEventListener("click", () => {
+    if(box.innerText !== "") return;
 
+    if(turnO){
+        box.innerText = "O";
+        box.style.color = "red";
+        turnO = false;
+    } else {
+        box.innerText = "X";
+        box.style.color = "black";
+        turnO = true;
+    }
+
+    box.disabled = true;
+    count++;
+
+    let isWinner = checkWinner();
+
+    if(count === 9 && !isWinner){
+        gameDraw();
+    }
+});
+
+    });
