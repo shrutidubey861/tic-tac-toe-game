@@ -38,7 +38,7 @@ tic-tac-toe/
 1. Clone this repository
 
 
-git clone https://github.com/shrutidubey861/tic-tac-toe.git
+git clone https://github.com/shrutidubey861/tic-tac-toe-game.git
 
 
 2. Open the project folder.
@@ -73,9 +73,7 @@ No installation or dependencies are required.
 
 ## 🌐 Live Demo
 
-Add your deployed project link here:
-
-
+https://tic-tac-toe-game-shruti22.vercel.app/
 
 ## 👩‍💻 Author
 
